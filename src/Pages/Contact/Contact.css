@@ -1,0 +1,47 @@
+.contact > .container {
+    max-width: 600px;
+    flex-direction: column;
+}
+
+.contact .social-media {
+    width: 100%;
+    column-gap: 15px;
+}
+
+.contact :where(.social-icon,.social-id) {
+    background-color: var(--secondary-color);
+}
+
+.contact .social-icon {
+    padding: 11px;
+    border-radius: 15px;
+    font-size: 24px;
+}
+
+.contact .social-id {
+    flex-grow: 1;
+    padding: 6px 15px;
+    border-radius: 15px;
+    text-align: center;
+    font-size: 22px;
+    color: var(--primary-color);
+    transition-duration: 0.3s;
+}
+
+.social-id:hover {
+    background-color: var(--primary-color);
+    color: #fff;
+}
+
+/* Responsive */
+@media (max-width:600px) {
+    .contact .social-icon {
+        margin-right: 5px;
+        padding: 10px;
+        font-size: 20px;
+    }
+
+    .contact .social-id {
+        font-size: 4vw;
+    }
+}
